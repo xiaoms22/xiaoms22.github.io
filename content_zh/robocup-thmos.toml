@@ -1,0 +1,4 @@
+type = "text"
+title = "RoboCup THMOS 类人组 Small 队"
+description = "真实类人机器人现场部署、网络适配、有限状态机调试和比赛故障排查经历。"
+source = "robocup-thmos.md"

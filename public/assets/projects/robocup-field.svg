@@ -1,0 +1,24 @@
+<svg width="1200" height="560" viewBox="0 0 1200 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">RoboCup field deployment</title>
+  <desc id="desc">A safe public diagram for RoboCup field deployment and troubleshooting.</desc>
+  <rect width="1200" height="560" rx="28" fill="#F8FAFC"/>
+  <rect x="60" y="54" width="1080" height="452" rx="24" fill="white" stroke="#D9E2EC"/>
+  <text x="96" y="112" fill="#0F172A" font-family="Arial, sans-serif" font-size="32" font-weight="700">RoboCup Real-Robot Field Deployment</text>
+  <rect x="120" y="164" width="960" height="248" rx="24" fill="#ECFDF5" stroke="#059669"/>
+  <line x1="600" y1="164" x2="600" y2="412" stroke="#059669" stroke-width="3" stroke-dasharray="10 10"/>
+  <circle cx="600" cy="288" r="54" fill="white" stroke="#059669" stroke-width="4"/>
+  <circle cx="600" cy="288" r="8" fill="#059669"/>
+  <g font-family="Arial, sans-serif" font-size="18" fill="#065F46">
+    <text x="158" y="220" font-size="23" font-weight="700">Field tasks</text>
+    <text x="158" y="260">network / IP adaptation</text>
+    <text x="158" y="296">remote-controller binding</text>
+    <text x="158" y="332">startup flow</text>
+    <text x="158" y="368">finite-state-machine debugging</text>
+    <text x="738" y="220" font-size="23" font-weight="700">Outcome</text>
+    <text x="738" y="260">THMOS humanoid Small team</text>
+    <text x="738" y="296">RoboCup China</text>
+    <text x="738" y="332">silver / second place</text>
+    <text x="738" y="368">field troubleshooting experience</text>
+  </g>
+  <text x="96" y="462" fill="#475569" font-family="Arial, sans-serif" font-size="17">Boundary: field deployment and system debugging contribution, not full vision or gait algorithm ownership.</text>
+</svg>

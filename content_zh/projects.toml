@@ -1,64 +1,96 @@
 type = "card"
 title = "项目"
-description = "具身智能、机器人系统与科学仿真方向的代表项目。"
+description = "面向具身智能岗位的公开项目索引。每个核心项目都写清楚我做了什么、证据在哪里、边界是什么。"
 
 [[items]]
 title = "SO-ARM101 VLA 真实机器人部署"
 subtitle = "LeRobot / OpenPI / ACT / Diffusion Policy / SmolVLA / pi0 / pi0.5"
 date = "2026"
+image = "/assets/projects/so101-pipeline.svg"
+imageAlt = "SO-ARM101 data-training-deployment pipeline"
+link = "/soarm101-vla/"
+linkLabel = "查看 SO-ARM101 详情"
+tags = ["99 episodes", "约2.8万帧", "真实机器人", "rollout评测"]
 content = """
-**我做了什么：** 围绕 SO-ARM101 pickup-and-putdown 任务，完成遥操作数据、LeRobot 风格 episode、策略训练、真机推理、rollout 评测和失败归因闭环。
+**Role：** 负责 SO-ARM101 pickup-and-putdown 任务的数据采集、LeRobot 风格数据组织、模型训练/部署验证和失败归因。
 
-**证据：** [SO-ARM101 公开仓库](https://github.com/xiaoms22/soarm101) 和 [作品集项目详情](https://github.com/xiaoms22/embodied-ai-portfolio/blob/main/projects/soarm101-vla.md)。
+**Pipeline：** 遥操作采集 -> LeRobotDataset -> ACT/Diffusion Policy/SmolVLA 训练 -> OpenPI/pi0/pi0.5 推理接入 -> 真机 rollout。
 
-**边界：** pi0/pi0.5 是部署验证和小样本评测，不是从零训练通用机器人基座模型。
+**Evidence：** 公开仓库 [xiaoms22/soarm101](https://github.com/xiaoms22/soarm101)，以及 99 episodes / 约 2.8 万帧、三类模型 rollout 和 pi0/pi0.5 小样本部署验证口径。
+
+**Boundary：** pi0/pi0.5 是部署验证和小样本评测，不包装成从零训练通用机器人基座模型。
+
+**Next：** 扩展物体、位置、光照、相机视角和语言指令改写评测，形成更标准的泛化测试表。
 """
 
 [[items]]
 title = "双臂危险材料铺放原型"
 subtitle = "ROS2 / 上位机 / LeRobot 接口 / state-action schema"
 date = "2026"
+image = "/assets/projects/dual-arm-schema.svg"
+imageAlt = "Dual-arm data and imitation-learning prototype"
+link = "/dual-arm-hazardous-material/"
+linkLabel = "查看双臂项目详情"
+tags = ["双臂操作", "ROS2", "示教采集", "原型链路"]
 content = """
-**我做了什么：** 围绕双臂操作任务，参与 ROS2 节点、上位机界面、LeRobot 风格采集脚本、state-action schema、示教流程和模型训练链路。
+**Role：** 参与面向危险材料铺放任务的双臂机器人示教-训练-部署原型链路。
 
-**证据：** 仅公开项目摘要，不上传内部文件或合作方材料。
+**Pipeline：** ROS2 节点/上位机 -> 视觉与关节状态采集 -> state-action schema -> LeRobot 接口 -> 示教数据 -> 模型训练验证。
 
-**边界：** 当前是原型链路和训练验证，不包装成完整工业交付。
+**Evidence：** 公开摘要只描述个人贡献和系统链路，不上传内部资料、原始代码或合作方材料。
+
+**Boundary：** 当前是原型链路和训练验证，不声称已完成工业最终交付。
+
+**Next：** 继续补齐双臂同步、动作安全约束、失败案例分类和标准化评测记录。
 """
 
 [[items]]
 title = "RoboCup THMOS 类人组 Small 队"
-subtitle = "真实机器人部署 / 网络-IP 配置 / 状态机调试"
+subtitle = "真实机器人部署 / 网络-IP 配置 / 有限状态机调试"
 date = "2026"
+image = "/assets/projects/robocup-field.svg"
+imageAlt = "RoboCup field deployment"
+link = "/robocup-thmos/"
+linkLabel = "查看 RoboCup 详情"
+tags = ["真实机器人", "现场调试", "网络/IP", "银牌"]
 content = """
-**我做了什么：** 支持类人机器人现场部署，包括配网/IP、遥控器绑定、启动流程、裁判盒流程、有限状态机调试和故障排查。
+**Role：** 支持 THMOS 队参加 RoboCup 中国赛类人组 Small 组，获得银牌 / 第二名。
 
-**证据：** RoboCup 中国赛类人组 Small 组银牌 / 第二名。
+**Pipeline：** 高擎动力小派机器人 -> 网络/IP 与遥控器绑定 -> 比赛启动流程 -> 有限状态机调试 -> 现场故障排查。
 
-**边界：** 贡献是现场部署和系统调试，不声称视觉或步态算法主研。
+**Evidence：** 比赛结果、机器人现场部署经历和网络适配/故障修正口径。
+
+**Boundary：** 贡献重点是现场部署和系统调试，不声称视觉或步态算法主研。
+
+**Next：** 将现场问题整理为启动 checklist、网络配置说明和状态机故障排查表。
 """
 
 [[items]]
 title = "STM32 智能车"
 subtitle = "FSM / PID / 嵌入式机器人控制"
 date = "2024"
+tags = ["嵌入式", "PID", "有限状态机"]
 content = """
-**我做了什么：** 参与小型嵌入式机器人感知-决策-执行闭环，包括避障、路径规划、推球、射门、FSM 任务逻辑和 PID 调参。
+**Role：** 参与小型嵌入式机器人感知-决策-执行闭环。
 
-**证据：** 代码链接待源代码清理后补充。
+**Pipeline：** 传感器输入 -> FSM 任务逻辑 -> PID 调参 -> 避障、路径规划、推球和射门动作。
 
-**边界：** 这是嵌入式机器人控制项目，不是具身大模型项目。
+**Evidence：** 作为底层控制、嵌入式调试和任务状态机经验补充。
+
+**Boundary：** 这是机器人控制工程项目，不包装成具身大模型项目。
 """
 
 [[items]]
 title = "科学仿真与多模态系统"
 subtitle = "SSMB / Thomson X 射线源 / HoloLens2 / 四足机器人"
 date = "2024-2026"
+tags = ["物理建模", "参数扫描", "多模态系统", "ROS2"]
 content = """
-**我做了什么：** 积累科学仿真、物理系统建模、多模态空间配准和 ROS2 机器人软件集成经验。
+**Role：** 积累科学仿真、物理系统建模、多模态空间配准和 ROS2 机器人软件集成经验。
 
-**证据：** 作品集仓库中的公开摘要。
+**Pipeline：** 理论建模 -> 数值仿真 -> 参数扫描 -> 误差归因 -> 工程约束分析。
 
-**边界：** 这些项目用于证明建模和系统能力，主要具身智能证据仍然是 SO-ARM101 项目。
+**Evidence：** 支撑数理建模、科研计算和复杂系统理解能力。
+
+**Boundary：** 这些项目是背景能力证明，具身智能主证据仍然是 SO-ARM101 与双臂项目。
 """
-

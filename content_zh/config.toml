@@ -1,12 +1,12 @@
 [site]
 title = "肖铭硕"
-description = "具身智能 / VLA / 机器人模仿学习作品集"
+description = "具身智能 / VLA / 机器人模仿学习 / 真实机器人部署"
 favicon = "/favicon.svg"
 last_updated = "2026年5月21日"
 
 [author]
 name = "肖铭硕"
-title = "具身智能 / VLA / 机器人学习"
+title = "具身智能 / VLA / 真实机器人部署"
 institution = "清华大学"
 avatar = "/avatar.svg"
 
@@ -49,3 +49,8 @@ type = "page"
 target = "cv"
 href = "/cv"
 
+[[sections]]
+id = "quick-focus"
+type = "markdown"
+source = "quick-focus.md"
+title = "面试快速入口"

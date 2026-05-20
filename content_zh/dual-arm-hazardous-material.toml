@@ -1,0 +1,4 @@
+type = "text"
+title = "双臂危险材料铺放原型"
+description = "面向真实工业场景的双臂示教、数据采集、模型训练和部署链路原型。"
+source = "dual-arm-hazardous-material.md"

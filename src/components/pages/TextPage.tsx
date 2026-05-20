@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import { TextPageConfig } from '@/types/page';
 
@@ -46,6 +47,17 @@ export default function TextPage({ config, content, embedded = false }: TextPage
                             <blockquote className="border-l-4 border-accent/50 pl-4 italic my-4 text-neutral-600 dark:text-neutral-500">
                                 {children}
                             </blockquote>
+                        ),
+                        img: ({ src, alt }) => (
+                            typeof src === 'string' ? (
+                            <Image
+                                src={src}
+                                alt={alt || ''}
+                                width={1200}
+                                height={560}
+                                className="my-6 rounded-xl border border-neutral-200 dark:border-neutral-800 shadow-sm"
+                            />
+                            ) : null
                         ),
                         strong: ({ children }) => <strong className="font-semibold text-primary">{children}</strong>,
                         em: ({ children }) => <em className="italic text-neutral-600 dark:text-neutral-500">{children}</em>,

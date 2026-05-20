@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import { CardPageConfig } from '@/types/page';
 
@@ -56,6 +57,17 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                         transition={{ duration: 0.4, delay: 0.1 * index }}
                         className={`bg-white dark:bg-neutral-900 ${embedded ? "p-4" : "p-6"} rounded-xl shadow-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-lg transition-all duration-200 hover:scale-[1.01]`}
                     >
+                        {item.image && (
+                            <div className="mb-4 overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-950">
+                                <Image
+                                    src={item.image}
+                                    alt={item.imageAlt || item.title}
+                                    width={1200}
+                                    height={560}
+                                    className="h-auto w-full object-cover"
+                                />
+                            </div>
+                        )}
                         <div className="flex justify-between items-start mb-2">
                             <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary`}>{item.title}</h3>
                             {item.date && (
@@ -81,6 +93,16 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                                         {tag}
                                     </span>
                                 ))}
+                            </div>
+                        )}
+                        {item.link && (
+                            <div className="mt-4">
+                                <a
+                                    href={item.link}
+                                    className="inline-flex items-center rounded-lg bg-accent px-3 py-2 text-sm font-medium text-white transition-colors duration-200 hover:bg-accent-dark"
+                                >
+                                    {item.linkLabel || 'View details'}
+                                </a>
                             </div>
                         )}
                     </motion.div>

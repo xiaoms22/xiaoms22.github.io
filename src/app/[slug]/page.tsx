@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getPageConfig, getMarkdownContent, getBibtexContent } from '@/lib/content';
+import { getPageConfig, getMarkdownContent, getBibtexContent, listPageSlugs } from '@/lib/content';
 import { getConfig } from '@/lib/config';
 import { parseBibTeX } from '@/lib/bibtexParser';
 import DynamicPageClient, { type DynamicPageLocaleData } from '@/components/pages/DynamicPageClient';
@@ -52,11 +52,11 @@ function loadDynamicPageData(slug: string, locale?: string): DynamicPageLocaleDa
 
 export function generateStaticParams() {
   const config = getConfig();
-  return config.navigation
+  const navSlugs = config.navigation
     .filter((nav) => nav.type === 'page' && nav.target !== 'about')
-    .map((nav) => ({
-      slug: nav.target,
-    }));
+    .map((nav) => nav.target);
+
+  return Array.from(new Set([...navSlugs, ...listPageSlugs()])).map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {

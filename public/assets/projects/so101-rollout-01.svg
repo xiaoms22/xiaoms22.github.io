@@ -1,0 +1,27 @@
+<svg width="1200" height="560" viewBox="0 0 1200 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">SO-ARM101 rollout checklist</title>
+  <desc id="desc">A safe public rollout checklist diagram without private lab imagery.</desc>
+  <rect width="1200" height="560" rx="28" fill="#F8FAFC"/>
+  <rect x="54" y="54" width="1092" height="452" rx="24" fill="white" stroke="#D9E2EC"/>
+  <text x="92" y="112" fill="#0F172A" font-family="Arial, sans-serif" font-size="32" font-weight="700">Real-Robot Rollout Checks</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="96" y="165" width="300" height="250" rx="22" fill="#E0F2FE" stroke="#0284C7"/>
+    <text x="132" y="213" fill="#075985" font-size="24" font-weight="700">Before rollout</text>
+    <text x="132" y="255" fill="#075985" font-size="18">schema consistency</text>
+    <text x="132" y="290" fill="#075985" font-size="18">normalization check</text>
+    <text x="132" y="325" fill="#075985" font-size="18">relative action check</text>
+    <text x="132" y="360" fill="#075985" font-size="18">safe stop enabled</text>
+    <rect x="450" y="165" width="300" height="250" rx="22" fill="#ECFDF5" stroke="#059669"/>
+    <text x="486" y="213" fill="#065F46" font-size="24" font-weight="700">During rollout</text>
+    <text x="486" y="255" fill="#065F46" font-size="18">latency profiling</text>
+    <text x="486" y="290" fill="#065F46" font-size="18">chunk execution</text>
+    <text x="486" y="325" fill="#065F46" font-size="18">gripper timing</text>
+    <text x="486" y="360" fill="#065F46" font-size="18">stage logging</text>
+    <rect x="804" y="165" width="300" height="250" rx="22" fill="#FEF3C7" stroke="#D97706"/>
+    <text x="840" y="213" fill="#92400E" font-size="24" font-weight="700">After rollout</text>
+    <text x="840" y="255" fill="#92400E" font-size="18">success / failure</text>
+    <text x="840" y="290" fill="#92400E" font-size="18">failure taxonomy</text>
+    <text x="840" y="325" fill="#92400E" font-size="18">data gap analysis</text>
+    <text x="840" y="360" fill="#92400E" font-size="18">next data collection</text>
+  </g>
+</svg>

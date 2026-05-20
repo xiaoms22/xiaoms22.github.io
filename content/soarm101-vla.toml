@@ -1,0 +1,4 @@
+type = "text"
+title = "SO-ARM101 VLA Real-Robot Deployment"
+description = "My main embodied AI project: teleoperation data, policy training, inference integration, real-robot rollout, and failure analysis."
+source = "soarm101-vla.md"

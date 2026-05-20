@@ -1,0 +1,4 @@
+type = "text"
+title = "Dual-Arm Hazardous Material Placement Prototype"
+description = "A dual-arm teaching, data collection, training, and deployment prototype for a real industrial manipulation scenario."
+source = "dual-arm-hazardous-material.md"

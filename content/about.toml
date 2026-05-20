@@ -3,10 +3,10 @@ title = "About"
 
 [profile]
 research_interests = [
-  "Embodied AI",
-  "Vision-Language-Action Models",
-  "Robot Imitation Learning",
-  "Real-Robot Deployment"
+  "LeRobot / OpenPI",
+  "Real-Robot Rollout",
+  "Robot Systems Debugging",
+  "Modeling & Simulation"
 ]
 
 [[sections]]
@@ -16,8 +16,13 @@ source = "bio.md"
 title = "About"
 
 [[sections]]
+id = "quick-focus"
+type = "markdown"
+source = "quick-focus.md"
+title = "Interview Focus"
+
+[[sections]]
 id = "news"
 type = "list"
 title = "Recent Updates"
 source = "news.toml"
-

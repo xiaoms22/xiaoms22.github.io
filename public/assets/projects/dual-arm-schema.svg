@@ -1,0 +1,32 @@
+<svg width="1200" height="560" viewBox="0 0 1200 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Dual-arm prototype schema</title>
+  <desc id="desc">A safe public diagram showing a dual-arm teaching and training prototype.</desc>
+  <rect width="1200" height="560" rx="28" fill="#F8FAFC"/>
+  <rect x="50" y="54" width="1100" height="452" rx="24" fill="white" stroke="#D9E2EC"/>
+  <text x="88" y="112" fill="#0F172A" font-family="Arial, sans-serif" font-size="32" font-weight="700">Dual-Arm Teaching -> Training Prototype</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="88" y="176" width="220" height="96" rx="18" fill="#E0F2FE" stroke="#0284C7"/>
+    <text x="132" y="216" fill="#075985" font-size="22" font-weight="700">ROS2 Nodes</text>
+    <text x="118" y="248" fill="#075985" font-size="16">state / control interface</text>
+    <rect x="372" y="176" width="220" height="96" rx="18" fill="#EEF2FF" stroke="#4F46E5"/>
+    <text x="413" y="216" fill="#3730A3" font-size="22" font-weight="700">Upper UI</text>
+    <text x="421" y="248" fill="#3730A3" font-size="16">task and logging</text>
+    <rect x="656" y="176" width="220" height="96" rx="18" fill="#ECFDF5" stroke="#059669"/>
+    <text x="686" y="216" fill="#065F46" font-size="22" font-weight="700">Data Schema</text>
+    <text x="690" y="248" fill="#065F46" font-size="16">observation / action</text>
+    <rect x="940" y="176" width="150" height="96" rx="18" fill="#FEF3C7" stroke="#D97706"/>
+    <text x="978" y="216" fill="#92400E" font-size="22" font-weight="700">Train</text>
+    <text x="970" y="248" fill="#92400E" font-size="16">validate loop</text>
+  </g>
+  <g stroke="#94A3B8" stroke-width="3" stroke-linecap="round">
+    <path d="M308 224H372"/>
+    <path d="M592 224H656"/>
+    <path d="M876 224H940"/>
+    <path d="M344 217L372 224L344 231"/>
+    <path d="M628 217L656 224L628 231"/>
+    <path d="M912 217L940 224L912 231"/>
+  </g>
+  <rect x="88" y="342" width="1002" height="88" rx="18" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="122" y="378" fill="#0F172A" font-family="Arial, sans-serif" font-size="20" font-weight="700">Public boundary</text>
+  <text x="122" y="410" fill="#475569" font-family="Arial, sans-serif" font-size="17">Only the prototype pipeline is described. Internal files, raw project code, data, and partner materials are not uploaded.</text>
+</svg>

@@ -1,0 +1,4 @@
+type = "text"
+title = "SO-ARM101 VLA 真实机器人部署"
+description = "从遥操作数据到模型训练、推理接入、真机 rollout 和失败归因的具身智能主项目。"
+source = "soarm101-vla.md"

@@ -1,0 +1,4 @@
+type = "text"
+title = "RoboCup THMOS Humanoid Small Team"
+description = "Real humanoid robot field deployment, network adaptation, finite-state-machine debugging, and competition troubleshooting."
+source = "robocup-thmos.md"

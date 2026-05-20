@@ -1,64 +1,96 @@
 type = "card"
 title = "Projects"
-description = "Selected projects in embodied AI, robot systems, and scientific simulation."
+description = "A public interview-oriented index for embodied AI, robot systems, and scientific simulation work. Each core project states my role, evidence, and boundary."
 
 [[items]]
 title = "SO-ARM101 VLA Real-Robot Deployment"
 subtitle = "LeRobot / OpenPI / ACT / Diffusion Policy / SmolVLA / pi0 / pi0.5"
 date = "2026"
+image = "/assets/projects/so101-pipeline.svg"
+imageAlt = "SO-ARM101 data-training-deployment pipeline"
+link = "/soarm101-vla/"
+linkLabel = "Open SO-ARM101 details"
+tags = ["99 episodes", "~28k frames", "real robot", "rollout evaluation"]
 content = """
-**What I did:** Built a teleoperation-to-deployment loop for SO-ARM101 pickup-and-putdown: real-robot demonstrations, LeRobot-style episodes, policy training, inference, rollout evaluation, and failure analysis.
+**Role:** Owned the pickup-and-putdown loop around SO-ARM101 data collection, LeRobot-style dataset organization, model training/deployment validation, and failure analysis.
 
-**Evidence:** [Public SO-ARM101 repo](https://github.com/xiaoms22/soarm101) and [portfolio detail](https://github.com/xiaoms22/embodied-ai-portfolio/blob/main/projects/soarm101-vla.md).
+**Pipeline:** teleoperation -> LeRobotDataset -> ACT/Diffusion Policy/SmolVLA training -> OpenPI/pi0/pi0.5 inference integration -> real-robot rollout.
 
-**Boundary:** pi0/pi0.5 work is deployment validation and small-sample evaluation, not from-scratch foundation model training.
+**Evidence:** public repo [xiaoms22/soarm101](https://github.com/xiaoms22/soarm101), 99 episodes / ~28k frames, model rollout notes, and pi0/pi0.5 small-sample deployment validation.
+
+**Boundary:** pi0/pi0.5 work is deployment validation and small-sample evaluation, not from-scratch foundation-model training.
+
+**Next:** Expand object, position, lighting, camera-view, and language-paraphrase tests into a more standard generalization table.
 """
 
 [[items]]
-title = "Dual-Arm Hazardous Material Placement"
+title = "Dual-Arm Hazardous Material Placement Prototype"
 subtitle = "ROS2 / upper-computer UI / LeRobot interface / state-action schema"
 date = "2026"
+image = "/assets/projects/dual-arm-schema.svg"
+imageAlt = "Dual-arm data and imitation-learning prototype"
+link = "/dual-arm-hazardous-material/"
+linkLabel = "Open dual-arm details"
+tags = ["dual arm", "ROS2", "teaching data", "prototype pipeline"]
 content = """
-**What I did:** Built prototype components around ROS2 nodes, upper-computer interface, LeRobot-style data collection scripts, state-action schema, teaching flow, and model training for a dual-arm manipulation task.
+**Role:** Built parts of a teaching-training-deployment prototype for a dual-arm hazardous-material placement task.
 
-**Evidence:** Public summary only, with internal files and partner materials excluded.
+**Pipeline:** ROS2 nodes/UI -> visual and joint-state collection -> state-action schema -> LeRobot interface -> demonstrations -> model training validation.
+
+**Evidence:** public summary only; no internal files, raw project code, or partner materials are uploaded.
 
 **Boundary:** Prototype pipeline and training validation, not final industrial delivery.
+
+**Next:** Improve dual-arm synchronization, motion safety constraints, failure taxonomy, and evaluation records.
 """
 
 [[items]]
 title = "RoboCup THMOS Humanoid Small Team"
-subtitle = "Real robot deployment / network-IP setup / state machine debugging"
+subtitle = "real robot deployment / network-IP setup / finite-state-machine debugging"
 date = "2026"
+image = "/assets/projects/robocup-field.svg"
+imageAlt = "RoboCup field deployment"
+link = "/robocup-thmos/"
+linkLabel = "Open RoboCup details"
+tags = ["real robot", "field debugging", "network/IP", "silver"]
 content = """
-**What I did:** Supported real humanoid robot field deployment, including network/IP setup, remote-controller binding, startup flow, referee-box flow, finite-state-machine debugging, and troubleshooting.
+**Role:** Supported THMOS in RoboCup China humanoid Small group and won silver / second place.
 
-**Evidence:** RoboCup China humanoid Small group silver / second place.
+**Pipeline:** High Torque XiaoPai humanoid robots -> network/IP and remote-controller binding -> startup flow -> finite-state-machine debugging -> field troubleshooting.
+
+**Evidence:** competition result and real robot deployment/debugging experience.
 
 **Boundary:** Field deployment and system debugging contribution, not full vision or gait algorithm ownership.
+
+**Next:** Convert field issues into startup checklists, network setup notes, and state-machine troubleshooting records.
 """
 
 [[items]]
 title = "STM32 Smart Car"
 subtitle = "FSM / PID / embedded robot control"
 date = "2024"
+tags = ["embedded", "PID", "finite-state machine"]
 content = """
-**What I did:** Worked on perception-decision-action control loops for a small embedded robot, including obstacle avoidance, path planning, pushing, shooting, FSM task logic, and PID tuning.
+**Role:** Worked on the perception-decision-action loop for a small embedded robot.
 
-**Evidence:** Code link pending after source cleanup.
+**Pipeline:** sensor input -> FSM task logic -> PID tuning -> obstacle avoidance, path planning, pushing, and shooting.
 
-**Boundary:** Embedded robotics/control project, not an embodied foundation-model project.
+**Evidence:** supporting evidence for low-level control, embedded debugging, and task-state design.
+
+**Boundary:** Robotics/control engineering project, not an embodied foundation-model project.
 """
 
 [[items]]
 title = "Scientific Simulation and Multimodal Systems"
 subtitle = "SSMB / Thomson X-ray source / HoloLens2 / quadruped robot"
 date = "2024-2026"
+tags = ["physics modeling", "parameter scan", "multimodal systems", "ROS2"]
 content = """
-**What I did:** Built experience across scientific simulation, physical-system modeling, multimodal spatial registration, and ROS2-based robot software integration.
+**Role:** Built experience across scientific simulation, physical-system modeling, multimodal spatial registration, and ROS2-based robot software integration.
 
-**Evidence:** Public summary in the portfolio repository.
+**Pipeline:** theoretical modeling -> numerical simulation -> parameter scan -> error analysis -> engineering-constraint reasoning.
 
-**Boundary:** Supporting evidence for modeling and systems skills; the main embodied-AI evidence is the SO-ARM101 project.
+**Evidence:** supporting evidence for mathematical modeling, scientific computing, and complex system understanding.
+
+**Boundary:** Background evidence for modeling and systems skills; the main embodied-AI evidence is SO-ARM101 and the dual-arm project.
 """
-

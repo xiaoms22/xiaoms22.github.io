@@ -3,10 +3,10 @@ title = "关于"
 
 [profile]
 research_interests = [
-  "具身智能",
-  "视觉-语言-动作模型",
-  "机器人模仿学习",
-  "真实机器人部署"
+  "LeRobot / OpenPI",
+  "真实机器人评测",
+  "机器人系统调试",
+  "建模与仿真"
 ]
 
 [[sections]]
@@ -16,8 +16,13 @@ source = "bio.md"
 title = "关于我"
 
 [[sections]]
+id = "quick-focus"
+type = "markdown"
+source = "quick-focus.md"
+title = "面试快速入口"
+
+[[sections]]
 id = "news"
 type = "list"
 title = "近期动态"
 source = "news.toml"
-

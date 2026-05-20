@@ -67,3 +67,18 @@ export function getTomlContent<T>(filename: string, locale?: string): T | null {
 export function getPageConfig<T = unknown>(pageName: string, locale?: string): T | null {
   return getTomlContent<T>(`${pageName}.toml`, locale);
 }
+
+export function listPageSlugs(): string[] {
+  const contentDir = path.join(process.cwd(), DEFAULT_CONTENT_DIR);
+
+  try {
+    return fs
+      .readdirSync(contentDir)
+      .filter((filename) => filename.endsWith('.toml'))
+      .map((filename) => filename.replace(/\.toml$/, ''))
+      .filter((slug) => slug !== 'config' && slug !== 'about' && slug !== 'news');
+  } catch (error) {
+    console.error('Error listing page slugs:', error);
+    return [];
+  }
+}

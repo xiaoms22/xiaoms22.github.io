@@ -1,12 +1,12 @@
 [site]
 title = "Mingshuo Xiao"
-description = "Embodied AI / VLA / Robot Imitation Learning Portfolio"
+description = "Embodied AI / VLA / Robot Imitation Learning / Real-Robot Deployment"
 favicon = "/favicon.svg"
 last_updated = "May 21, 2026"
 
 [author]
 name = "Mingshuo Xiao"
-title = "Embodied AI / VLA / Robot Learning"
+title = "Embodied AI / VLA / Real-Robot Deployment"
 institution = "Tsinghua University"
 avatar = "/avatar.svg"
 
@@ -49,3 +49,8 @@ type = "page"
 target = "cv"
 href = "/cv"
 
+[[sections]]
+id = "quick-focus"
+type = "markdown"
+source = "quick-focus.md"
+title = "Interview Focus"
