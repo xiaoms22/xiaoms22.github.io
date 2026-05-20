@@ -1,0 +1,51 @@
+[site]
+title = "肖铭硕"
+description = "具身智能 / VLA / 机器人模仿学习作品集"
+favicon = "/favicon.svg"
+last_updated = "2026年5月21日"
+
+[author]
+name = "肖铭硕"
+title = "具身智能 / VLA / 机器人学习"
+institution = "清华大学"
+avatar = "/avatar.svg"
+
+[social]
+github = "https://github.com/xiaoms22"
+location = "北京，中国"
+
+[features]
+enable_likes = false
+enable_one_page_mode = false
+
+[i18n]
+enabled = true
+locales = ["zh", "en"]
+default_locale = "en"
+mode = "auto"
+fixed_locale = "en"
+persist = true
+switcher = true
+
+[i18n.labels]
+zh = "中文"
+en = "English"
+
+[[navigation]]
+title = "关于"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "项目"
+type = "page"
+target = "projects"
+href = "/projects"
+
+[[navigation]]
+title = "简历"
+type = "page"
+target = "cv"
+href = "/cv"
+

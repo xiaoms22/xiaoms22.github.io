@@ -1,0 +1,64 @@
+type = "card"
+title = "Projects"
+description = "Selected projects in embodied AI, robot systems, and scientific simulation."
+
+[[items]]
+title = "SO-ARM101 VLA Real-Robot Deployment"
+subtitle = "LeRobot / OpenPI / ACT / Diffusion Policy / SmolVLA / pi0 / pi0.5"
+date = "2026"
+content = """
+**What I did:** Built a teleoperation-to-deployment loop for SO-ARM101 pickup-and-putdown: real-robot demonstrations, LeRobot-style episodes, policy training, inference, rollout evaluation, and failure analysis.
+
+**Evidence:** [Public SO-ARM101 repo](https://github.com/xiaoms22/soarm101) and [portfolio detail](https://github.com/xiaoms22/embodied-ai-portfolio/blob/main/projects/soarm101-vla.md).
+
+**Boundary:** pi0/pi0.5 work is deployment validation and small-sample evaluation, not from-scratch foundation model training.
+"""
+
+[[items]]
+title = "Dual-Arm Hazardous Material Placement"
+subtitle = "ROS2 / upper-computer UI / LeRobot interface / state-action schema"
+date = "2026"
+content = """
+**What I did:** Built prototype components around ROS2 nodes, upper-computer interface, LeRobot-style data collection scripts, state-action schema, teaching flow, and model training for a dual-arm manipulation task.
+
+**Evidence:** Public summary only, with internal files and partner materials excluded.
+
+**Boundary:** Prototype pipeline and training validation, not final industrial delivery.
+"""
+
+[[items]]
+title = "RoboCup THMOS Humanoid Small Team"
+subtitle = "Real robot deployment / network-IP setup / state machine debugging"
+date = "2026"
+content = """
+**What I did:** Supported real humanoid robot field deployment, including network/IP setup, remote-controller binding, startup flow, referee-box flow, finite-state-machine debugging, and troubleshooting.
+
+**Evidence:** RoboCup China humanoid Small group silver / second place.
+
+**Boundary:** Field deployment and system debugging contribution, not full vision or gait algorithm ownership.
+"""
+
+[[items]]
+title = "STM32 Smart Car"
+subtitle = "FSM / PID / embedded robot control"
+date = "2024"
+content = """
+**What I did:** Worked on perception-decision-action control loops for a small embedded robot, including obstacle avoidance, path planning, pushing, shooting, FSM task logic, and PID tuning.
+
+**Evidence:** Code link pending after source cleanup.
+
+**Boundary:** Embedded robotics/control project, not an embodied foundation-model project.
+"""
+
+[[items]]
+title = "Scientific Simulation and Multimodal Systems"
+subtitle = "SSMB / Thomson X-ray source / HoloLens2 / quadruped robot"
+date = "2024-2026"
+content = """
+**What I did:** Built experience across scientific simulation, physical-system modeling, multimodal spatial registration, and ROS2-based robot software integration.
+
+**Evidence:** Public summary in the portfolio repository.
+
+**Boundary:** Supporting evidence for modeling and systems skills; the main embodied-AI evidence is the SO-ARM101 project.
+"""
+

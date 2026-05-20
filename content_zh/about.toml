@@ -1,0 +1,23 @@
+type = "about"
+title = "关于"
+
+[profile]
+research_interests = [
+  "具身智能",
+  "视觉-语言-动作模型",
+  "机器人模仿学习",
+  "真实机器人部署"
+]
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+title = "关于我"
+
+[[sections]]
+id = "news"
+type = "list"
+title = "近期动态"
+source = "news.toml"
+

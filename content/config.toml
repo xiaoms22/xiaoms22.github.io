@@ -1,0 +1,51 @@
+[site]
+title = "Mingshuo Xiao"
+description = "Embodied AI / VLA / Robot Imitation Learning Portfolio"
+favicon = "/favicon.svg"
+last_updated = "May 21, 2026"
+
+[author]
+name = "Mingshuo Xiao"
+title = "Embodied AI / VLA / Robot Learning"
+institution = "Tsinghua University"
+avatar = "/avatar.svg"
+
+[social]
+github = "https://github.com/xiaoms22"
+location = "Beijing, China"
+
+[features]
+enable_likes = false
+enable_one_page_mode = false
+
+[i18n]
+enabled = true
+locales = ["zh", "en"]
+default_locale = "en"
+mode = "auto"
+fixed_locale = "en"
+persist = true
+switcher = true
+
+[i18n.labels]
+zh = "中文"
+en = "English"
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Projects"
+type = "page"
+target = "projects"
+href = "/projects"
+
+[[navigation]]
+title = "CV"
+type = "page"
+target = "cv"
+href = "/cv"
+

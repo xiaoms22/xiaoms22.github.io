@@ -1,0 +1,64 @@
+type = "card"
+title = "项目"
+description = "具身智能、机器人系统与科学仿真方向的代表项目。"
+
+[[items]]
+title = "SO-ARM101 VLA 真实机器人部署"
+subtitle = "LeRobot / OpenPI / ACT / Diffusion Policy / SmolVLA / pi0 / pi0.5"
+date = "2026"
+content = """
+**我做了什么：** 围绕 SO-ARM101 pickup-and-putdown 任务，完成遥操作数据、LeRobot 风格 episode、策略训练、真机推理、rollout 评测和失败归因闭环。
+
+**证据：** [SO-ARM101 公开仓库](https://github.com/xiaoms22/soarm101) 和 [作品集项目详情](https://github.com/xiaoms22/embodied-ai-portfolio/blob/main/projects/soarm101-vla.md)。
+
+**边界：** pi0/pi0.5 是部署验证和小样本评测，不是从零训练通用机器人基座模型。
+"""
+
+[[items]]
+title = "双臂危险材料铺放原型"
+subtitle = "ROS2 / 上位机 / LeRobot 接口 / state-action schema"
+date = "2026"
+content = """
+**我做了什么：** 围绕双臂操作任务，参与 ROS2 节点、上位机界面、LeRobot 风格采集脚本、state-action schema、示教流程和模型训练链路。
+
+**证据：** 仅公开项目摘要，不上传内部文件或合作方材料。
+
+**边界：** 当前是原型链路和训练验证，不包装成完整工业交付。
+"""
+
+[[items]]
+title = "RoboCup THMOS 类人组 Small 队"
+subtitle = "真实机器人部署 / 网络-IP 配置 / 状态机调试"
+date = "2026"
+content = """
+**我做了什么：** 支持类人机器人现场部署，包括配网/IP、遥控器绑定、启动流程、裁判盒流程、有限状态机调试和故障排查。
+
+**证据：** RoboCup 中国赛类人组 Small 组银牌 / 第二名。
+
+**边界：** 贡献是现场部署和系统调试，不声称视觉或步态算法主研。
+"""
+
+[[items]]
+title = "STM32 智能车"
+subtitle = "FSM / PID / 嵌入式机器人控制"
+date = "2024"
+content = """
+**我做了什么：** 参与小型嵌入式机器人感知-决策-执行闭环，包括避障、路径规划、推球、射门、FSM 任务逻辑和 PID 调参。
+
+**证据：** 代码链接待源代码清理后补充。
+
+**边界：** 这是嵌入式机器人控制项目，不是具身大模型项目。
+"""
+
+[[items]]
+title = "科学仿真与多模态系统"
+subtitle = "SSMB / Thomson X 射线源 / HoloLens2 / 四足机器人"
+date = "2024-2026"
+content = """
+**我做了什么：** 积累科学仿真、物理系统建模、多模态空间配准和 ROS2 机器人软件集成经验。
+
+**证据：** 作品集仓库中的公开摘要。
+
+**边界：** 这些项目用于证明建模和系统能力，主要具身智能证据仍然是 SO-ARM101 项目。
+"""
+

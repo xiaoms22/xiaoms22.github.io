@@ -1,0 +1,8 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="96" fill="#111827"/>
+  <circle cx="384" cy="128" r="56" fill="#2563eb"/>
+  <path d="M96 352c52-96 116-144 192-144 49 0 91 18 128 54" fill="none" stroke="#60a5fa" stroke-width="28" stroke-linecap="round"/>
+  <text x="72" y="294" font-family="Inter, Arial, sans-serif" font-size="104" font-weight="700" fill="#f8fafc">XMS</text>
+  <text x="76" y="368" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="500" fill="#bfdbfe">Embodied AI</text>
+</svg>
+
